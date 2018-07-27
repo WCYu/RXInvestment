@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rxjy.rxinvestment.activity.my.MoneyDetailsTzTwoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="342px"
+        android:background="@drawable/ic_walletbgn"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200px"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:text="实发金额"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+
+            <com.rxjy.rxinvestment.custom.RiseNumberTextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="25px"
+                android:layout_marginTop="20px"
+                android:text="0.00"
+                android:textColor="@color/colorBG"
+                android:textSize="44px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:text="(元)"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_one"
+        android:layout_width="fill_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="20px"
+        android:background="@color/colorWhite">
+
+    </GridView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="20px"
+        android:background="@color/line_color" />
+
+    <ListView
+        android:id="@+id/lv_one"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorWhite"
+        android:divider="@null">
+
+    </ListView>
+
+</LinearLayout>

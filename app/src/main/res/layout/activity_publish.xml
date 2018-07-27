@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rxjy.rxinvestment.activity.find.PublishActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/color_f2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingBottom="20px"
+        android:paddingLeft="24px"
+        android:paddingTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="30px" />
+
+        <EditText
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:background="@null"
+            android:hint="文章标题"
+            android:textColor="@color/cor9fa0a0"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLine" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24px"
+        android:paddingLeft="24px"
+        android:paddingTop="30px"
+        android:text="内容"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="30px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:paddingLeft="24px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:focusable="true"
+
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/publish_content"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:background="@null"
+                android:gravity="top"
+                android:textSize="28px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24px"
+        android:background="@color/colorLine" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24px"
+        android:paddingLeft="24px"
+        android:paddingTop="30px"
+        android:text="封面"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="30px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20px"
+        android:paddingLeft="24px"
+        android:paddingRight="24px">
+
+        <ImageView
+            android:id="@+id/complant_grid"
+            android:layout_width="160px"
+            android:layout_height="180px"
+            android:layout_marginTop="10px"
+            android:paddingRight="10px"
+            android:src="@mipmap/addpictures" />
+
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/complant_grid"
+            android:background="@drawable/dotred"
+            android:gravity="center"
+            android:src="@mipmap/delete"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="28px"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/color_f2" />
+
+</LinearLayout>

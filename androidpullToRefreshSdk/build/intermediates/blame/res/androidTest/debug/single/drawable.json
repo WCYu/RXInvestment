@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Work\\RXInvestment\\androidpullToRefreshSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\Work\\RXInvestment\\androidpullToRefreshSdk\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "E:\\Work\\RXInvestment\\androidpullToRefreshSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\Work\\RXInvestment\\androidpullToRefreshSdk\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

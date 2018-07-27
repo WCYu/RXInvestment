@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rxjy.rxinvestment.activity.my.investment.SetEmiActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:paddingTop="40px"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="@string/mailbox"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+            android:hint="@string/mailbox"
+            android:background="@color/transparent"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="28px" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40px">
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_red"
+            android:textSize="28px"
+            android:text="确定"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorredbg"
+    android:orientation="vertical">
+    <!--android:paddingTop="42px">-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/colorwhite"
+            android:textSize="36px" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:padding="20px"
+            android:src="@drawable/ic_backwrite" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="100px"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="@color/colorwhite"
+            android:textSize="28px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/publish"
+            android:layout_width="40px"
+            android:layout_height="36px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>
