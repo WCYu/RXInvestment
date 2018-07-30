@@ -100,7 +100,8 @@ public class SettingActivity extends BaseActivity {
                         MySharedPreferences.getInstance().empty();
                         SharedPreferences sharedPreferences = getSharedPreferences(Constants.IS_SETALIAS, MODE_PRIVATE);
                         sharedPreferences.edit().putString(App.jpushname, null).commit();
-//                        JPushInterface.setAlias(SettingActivity.this, 0, null);
+                        App.setAlias("");
+                        JPushInterface.deleteAlias(App.baseActivity, 0);
                         Log.e("设置别名", "清空别名");
                         Intent intent = new Intent(SettingActivity.this, LoginActivity.class);
                         startActivity(intent);

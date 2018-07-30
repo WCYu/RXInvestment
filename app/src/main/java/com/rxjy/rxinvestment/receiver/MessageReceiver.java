@@ -94,6 +94,7 @@ public class MessageReceiver extends BroadcastReceiver {
         num = num + 1;
         preferences.edit().putInt(msgnum, num).commit();
         JoininNjjActivity.activity.ShowMsgNum(num);
+        JoininNjjActivity.activity.mineFragment.ShowMsgNum();
     }
 
 }

@@ -65,7 +65,7 @@ public class GuideActivity extends BaseActivity {
         view_guide1 = LayoutInflater.from(this).inflate(R.layout.activity_guideone, null);
         view_guide2 = LayoutInflater.from(this).inflate(R.layout.activity_guidetwo, null);
         view_guide3 = LayoutInflater.from(this).inflate(R.layout.activity_guidethree, null);
-        view_guide4 = LayoutInflater.from(this).inflate(R.layout.activity_guidefour, null);
+//        view_guide4 = LayoutInflater.from(this).inflate(R.layout.activity_guidefour, null);
 
         guide_go.setVisibility(View.GONE);
 
@@ -73,7 +73,7 @@ public class GuideActivity extends BaseActivity {
         viewlist.add(view_guide1);
         viewlist.add(view_guide2);
         viewlist.add(view_guide3);
-        viewlist.add(view_guide4);
+//        viewlist.add(view_guide4);
 
         PagerAdapter pageradapter = new PagerAdapter() {
 
@@ -119,10 +119,11 @@ public class GuideActivity extends BaseActivity {
                         guide_go.setVisibility(View.GONE);
                         break;
                     case 2:
-                        guide_go.setVisibility(View.GONE);
+//                        guide_go.setVisibility(View.GONE);
+                        guide_go.setVisibility(View.VISIBLE);
                         break;
                     case 3:
-                        guide_go.setVisibility(View.VISIBLE);
+//                        guide_go.setVisibility(View.VISIBLE);
                         break;
                 }
             }

@@ -122,10 +122,15 @@ public class JoininMoreFragment extends BaseFragment {
         ButterKnife.unbind(this);
     }
 
-    @OnClick({R.id.ly_hongbao, R.id.ly_huitouke, R.id.ly_jiameng, R.id.ly_renshi, R.id.ly_caiwu, R.id.ly_zijin, R.id.ly_shangwu, R.id.ly_zhuan, R.id.ly_gongcheng, R.id.ly_gongsi, R.id.ly_cailiaoshang, R.id.ly_jingli})
+    @OnClick({R.id.iv_morebanner, R.id.ly_hongbao, R.id.ly_huitouke, R.id.ly_jiameng, R.id.ly_renshi, R.id.ly_caiwu, R.id.ly_zijin, R.id.ly_shangwu, R.id.ly_zhuan, R.id.ly_gongcheng, R.id.ly_gongsi, R.id.ly_cailiaoshang, R.id.ly_jingli})
     public void onViewClicked(View view) {
         Intent intent = null;
         switch (view.getId()) {
+            case R.id.iv_morebanner:
+                intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("title", "瑞祥装饰");
+                intent.putExtra("url", "http://m.rxjy.com");
+                break;
             case R.id.ly_hongbao://红包
                 if (App.postName.equals("投资招商")) {
                     tvFuwu1.setText("加盟介绍");

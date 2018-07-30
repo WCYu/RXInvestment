@@ -118,7 +118,7 @@ public class JoininNjjActivity extends BaseActivity {
     private HomeFragment homeFragment;
     private JoininMoreFragment walletFragment;
     private FindFragment findFragment;
-    private MainFragment mineFragment;
+    public MainFragment mineFragment;
     private AlertDialog alertDialog;
     private int[] iconNormal = new int[]{
             R.mipmap.ic_tab_hostpage,
