@@ -8,12 +8,20 @@
     tools:context="com.rxjy.rxinvestment.activity.home.LoginActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="430px"
-        android:scaleType="fitXY"
-        app:srcCompat="@mipmap/ic_login_topbg" />
+        android:layout_marginTop="100px"
+        android:scaleType="fitXY">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="320px"
+            android:layout_height="110px"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/loginicon" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -24,7 +32,7 @@
             android:id="@+id/rl_phone"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180px"
+            android:layout_marginTop="50px"
             android:paddingBottom="20px">
 
             <ImageView
@@ -73,8 +81,8 @@
             android:id="@+id/rl_veritycode"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:paddingBottom="20px">
+            android:paddingBottom="20px"
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/iv_verification_code_icon"
@@ -137,8 +145,8 @@
             android:id="@+id/rl_pwd"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:paddingBottom="20px">
+            android:paddingBottom="20px"
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/iv_new_password_icon"
@@ -192,9 +200,9 @@
             android:background="@drawable/btn_red"
             android:padding="10dp"
             android:text="激活"
-            android:visibility="gone"
             android:textColor="@color/colorwhite"
-            android:textSize="30px" />
+            android:textSize="30px"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -207,9 +215,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:visibility="gone"
                 android:orientation="vertical"
-                android:padding="20px">
+                android:padding="20px"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/tv_forgetpwd"
@@ -241,13 +249,13 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:layout_marginRight="40px"
-                android:layout_marginLeft="40px"
                 android:layout_marginBottom="80px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
                 android:text=""
-                android:visibility="gone"
                 android:textColor="@color/colorRed"
-                android:textSize="28px" />
+                android:textSize="28px"
+                android:visibility="gone" />
 
         </RelativeLayout>
 
